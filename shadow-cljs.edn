@@ -1,0 +1,12 @@
+{:source-paths ["src/main" "src/test"]
+ :builds
+ {:functions
+  {:target      :node-library
+   :output-to   "functions/index.js"
+   :exports-var mypackage.core/cloud-functions
+   :release     {:compiler-options {:optimizations :simple}}}
+
+  :functions-tests
+  {:target    :node-test
+   :output-to "functions/tests.js"
+   :autorun   true}}}

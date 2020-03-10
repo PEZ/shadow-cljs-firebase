@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "test:functions": "shadow-cljs watch functions-tests",
+    "run:functions": "shadow-cljs watch functions",
+    "build:functions": "shadow-cljs compile functions",
+    "release:functions": "shadow-cljs release functions"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "devDependencies": {
+    "firebase-tools": "^7.6.0",
+    "shadow-cljs": "^2.8.64"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.3.0"
+  }
+}
